@@ -1,6 +1,34 @@
-module.exports = function averageMinMax() {
-  // TODO Implement me.
+function calcMinValue(arr) {
+  return arr.sort((a, b) => a - b)[0];
 };
+
+function calcMaxValue(arr) {
+  return arr.sort((a, b) => b - a)[0];
+};
+
+function calcSumValue(arr) {
+  let sum = 0;
+  for (const num of arr) {
+    sum += num;
+  };
+  return sum;
+};
+
+function calcAvgValue(arr) {
+  let sum = calcSumValue(arr);
+  average = sum / (arr.length);
+  return average;
+};
+
+function averageMinMax(arr) {
+  let minValue = calcMinValue(arr);
+  let maxValue = calcMaxValue(arr);
+  let avgValue = calcAvgValue(arr);
+  return `Min: ${minValue} Max: ${maxValue} Average: ${avgValue}`;
+};
+
+
+module.exports = averageMinMax;
 
 /**Weryfikacja */
 function verify(input, goal) {

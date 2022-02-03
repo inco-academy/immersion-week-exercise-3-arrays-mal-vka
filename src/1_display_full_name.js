@@ -1,6 +1,10 @@
-module.exports = function displayFullName() {
-  // TODO Implement me.
+function displayFullName(name) {
+  const lastName = name.split(" ")[name.split(" ").length - 1];
+  return `My name is ${lastName}, ${name}`;
 };
+
+
+module.exports = displayFullName;
 
 /* Weryfikacja */
 
@@ -12,6 +16,6 @@ function verify(input, goal) {
   }
 }
 
-verify(displayName("James Bond"), "My name is Bond, James Bond");
-verify(displayName("Ada Lovelace"), "My name is Lovelace, Ada Lovelace");
-verify(displayName("Salvador Felipe Jacinto Dalí"), "My name is Dalí, Salvador Felipe Jacinto Dalí");
+verify(displayFullName("James Bond"), "My name is Bond, James Bond");
+verify(displayFullName("Ada Lovelace"), "My name is Lovelace, Ada Lovelace");
+verify(displayFullName("Salvador Felipe Jacinto Dalí"), "My name is Dalí, Salvador Felipe Jacinto Dalí");

@@ -1,6 +1,9 @@
-module.exports = function concatArray() {
-  // TODO Implement me.
+function concatArray(arr) {
+  return `${arr.join(" ")}.`;
 };
+
+
+module.exports = concatArray;
 
 /* Weryfikacja */
 
