@@ -1,3 +1,5 @@
+module.exports = removeDouble;
+
 function removeDouble(arr) {
   const unique = [];
   for (let i = arr.length - 1; i >= 0; i--) {
@@ -6,11 +8,10 @@ function removeDouble(arr) {
     };
   };
   // const unique = new Set(arr); //nie zachowuje kolejności  
+  console.log(unique);
   return unique;
 };
 
-
-module.exports = removeDouble;
 
 /**Weryfikacja */
 

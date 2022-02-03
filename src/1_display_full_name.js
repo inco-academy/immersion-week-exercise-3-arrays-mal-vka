@@ -1,6 +1,7 @@
 function displayFullName(name) {
   const lastName = name.split(" ")[name.split(" ").length - 1];
-  return `My name is ${lastName}, ${name}`;
+  console.log(`My name is ${lastName}, ${name}`);
+  // return `My name is ${lastName}, ${name}`;
 };
 
 
