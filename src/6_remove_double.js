@@ -1,5 +1,3 @@
-module.exports = removeDouble;
-
 function removeDouble(arr) {
   const unique = [];
   for (let i = arr.length - 1; i >= 0; i--) {
@@ -12,6 +10,7 @@ function removeDouble(arr) {
   return unique;
 };
 
+module.exports = removeDouble;
 
 /**Weryfikacja */
 

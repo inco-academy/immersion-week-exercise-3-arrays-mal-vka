@@ -1,10 +1,10 @@
 const matrixGen = require("./7_matrix_generator");
 
-test("Remove Double (1)", () => {
+test("Matrix Generator (1)", () => {
   expect(matrixGen(1, 5)).toStrictEqual([[1, 2, 3, 4, 5]]);
 });
 
-test("Remove Double (1)", () => {
+test("Matrix Generator (2)", () => {
   expect(matrixGen(5, 4)).toStrictEqual([
     [1, 2, 3, 4],
     [2, 4, 6, 8],
@@ -14,7 +14,7 @@ test("Remove Double (1)", () => {
   ]);
 });
 
-test("Remove Double (1)", () => {
+test("Matrix Generator (3)", () => {
   expect(matrixGen(3, 6)).toStrictEqual([
     [1, 2, 3, 4, 5, 6],
     [2, 4, 6, 8, 10, 12],
@@ -22,6 +22,6 @@ test("Remove Double (1)", () => {
   ]);
 });
 
-test("Remove Double (1)", () => {
+test("Matrix Generator (4)", () => {
   expect(matrixGen(0, 0)).toStrictEqual([]);
 });
