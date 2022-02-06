@@ -21,9 +21,9 @@ function calcAvgValue(arr) {
 };
 
 function averageMinMax(arr) {
-  let minValue = calcMinValue(arr);
-  let maxValue = calcMaxValue(arr);
-  let avgValue = calcAvgValue(arr);
+  const minValue = calcMinValue(arr);
+  const maxValue = calcMaxValue(arr);
+  const avgValue = calcAvgValue(arr);
   return `Min: ${minValue} Max: ${maxValue} Average: ${avgValue}`;
 };
 

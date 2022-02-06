@@ -1,5 +1,5 @@
 function evenIndexes(word) {
-  let arr = [];
+  const arr = [];
   for (let i = 0; i < word.length; i += 2) {
     arr.push(word[i]);
   };
